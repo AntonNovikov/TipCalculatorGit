@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="calculator">
-            <h3 style="text-align: center;font-weight: bold;"></h3>
-            <p style = "border-bottom: 2px solid rgba(7, 6, 6, 0.466);"></p>
-        </div>
-        <br>
-        <label for="amout">Bill Amount</label>
-        <button></button> <input id="amount" type="text"><i class="fas fa-dollar-sign"></i>
+      <div class="calculator">
+        <h3 style="text-align: center; font-weight: bold"></h3>
+        <p style="border-bottom: 2px solid rgba(7, 6, 6, 0.466)"></p>
+      </div>
+      <br />
+      <label for="amout">Bill Amount</label>
+      <br />
+      <button><i class="fas fa-dollar-sign"></i></button>
+      <input id="amount" type="text" />
+      <br />
+      <br />
+      <label for="guest">Number of Guests</label>
+      <br />
+      <button><i class="fas fa-male"></i></button
+      ><input id="guest" type="text" />
+      <br />
+      <br />
+      <label for="quality">Service quality</label>
+      <br />
+      <select name="select" id="quality">
+        <option disable selected value="0"></option>
+        <option value="0.3">30% - Outstanding</option>
+        <option value="0.2">20% - Good</option>
+        <option value="0.15">15% - It was Ok</option>
+        <option value="0.1">10% - Bad</option>
+        <option value="0.05">5% - Terrible</option>
+      </select>
+      <div style="text-align: center">
+        <p style="border-top: 2px solid rgba(128, 128, 128, 0.486)"></p>
+        <button style="border-radius: 5px; width: fit-content" id="calculate">
+          Calculate
+        </button>
+      </div>
+      <div id="tip-amount"></div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
